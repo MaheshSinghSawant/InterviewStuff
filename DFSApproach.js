@@ -30,7 +30,8 @@ let DFSApproach = (n, edges) => {
   // Usually in both DFS and BFS we keep track of the visited nodes which we can then use based on the question
   let visited = new Set();
 
-  // FOR DFS approach we go through each vertex and perform DFS on it if it has not already been visited
+  // Since this is an unconnected graph, we perform DFS on it if it has not already been visited
+  // each time DFS is performed on an unvisited node, we can concur that it is a separate component
 
   for(let i = 0; i < n; i++) {
     if(!visited.has(i)) {
