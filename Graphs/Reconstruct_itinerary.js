@@ -1,7 +1,7 @@
 // create adj list
 // sort each list of cities
 // perform dfs such that ther is a while loop inside while checks till all cities have been dfsed
-// then after that it unshifts the source to the resutls
+// then after that it unshifts the source to the results
 
 
 /**

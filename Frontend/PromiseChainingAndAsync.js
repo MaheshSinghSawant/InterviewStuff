@@ -51,3 +51,43 @@ async function stinker() {
 }
 
 stinker()
+
+
+
+
+
+
+/*
+doing this same thing using just callbacks
+const posts = [
+  { title: 'viva la vida', author: 'mahesh', id: 1 },
+  { title: 'upheaval', author: 'shreya', id: 2 },
+  { title: 'digital fortress', author: 'dan', id: 3 }
+]
+
+const author = [
+  { name: 'mahesh', twitter: 'mss375', bio: 'mess' },
+  { name: 'shreya', twitter: 'sz', bio: 'not a mess' },
+  { name: 'dan', twitter: 'db', bio: 'absolute mess' }
+]
+
+
+function getPost(id, callback) {
+    const post = posts.find((ele) => ele.id === id)
+    setTimeout(function() {
+      getAuthorTwitter(post.author, callback)
+    }, 1000)
+}
+
+
+function getAuthorTwitter(name, callb) {
+    const authorObj = author.find((ele) => ele.name === name)
+    let twitter = ''
+    if (authorObj && authorObj.twitter) twitter = authorObj.twitter
+    setTimeout(() => {
+      callb(twitter)
+    }, 1000)
+}
+
+getPost(1, (val) => console.log(val))
+*/

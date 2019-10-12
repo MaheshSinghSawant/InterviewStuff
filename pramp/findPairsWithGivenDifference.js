@@ -1,14 +1,14 @@
 function findPairsWithGivenDifference(arr, k) {
   /* create a map such that:
   {
-     y + k  : index
+     x - k : y
   }
   */
   let output = []
   let map = {}
   for(let i = 0; i < arr.length; i++) {
     // x - k = y
-    map[arr[i] - k] = arr[i]
+    map[arr[i] -  k] = arr[i]
   }
   console.log(map)
   for(let i = 0; i < arr.length; i++) {
