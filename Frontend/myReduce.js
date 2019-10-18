@@ -1,4 +1,4 @@
-// create your own reducer function
+// create your own reducer function 
 
 Array.prototype.myReduce = function(fn, initialVal) {
   let arr = this
