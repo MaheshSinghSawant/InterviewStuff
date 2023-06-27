@@ -5,8 +5,18 @@
 
 let findTwoSum = (list = [10, 15, 3, 7], k = 17) => {
   list.sort((a, b) => a - b)
-  console.log(list)
+  let n = list.length 
+  let l = 0
+  let r = n - 1
+
+  while(l <= r) {
+    let sum = list[l] + list[r]
+    if(sum === k) return [list[l], list[r]]
+    if(sum > k) r--
+    if(sum < k) l++
+  }
+  return []
 }
 
 
-findTwoSum()
+console.log(findTwoSum())

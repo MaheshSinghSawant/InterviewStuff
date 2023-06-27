@@ -1,0 +1,29 @@
+First Interview: 
+Implement a keyboard navigation handler. When you press UP, DOWN, LEFT, RIGHT you have to move 
+the highlighted class to the dom node spatially closest to it.
+<div class="shape shape-a"></div>
+<div class="shape shape-b"></div>
+<div class="shape shape-c highlighted"></div>
+<div class="shape shape-d"></div>
+
+A
+  B     E
+    C
+  D
+
+
+
+Second Interview
+Implement parseInt from scratch
+
+
+
+Third Interview
+Implement a batch request library. Imagine a client that makes 200 requests, batch all requests within
+50ms to one request
+let request = {...}
+makeRequest(request, callback)
+
+let callbackFn = [... // arr of responses]
+batchRequests(requests, callbackFn)
+(Used a queue)

@@ -10,4 +10,5 @@ let reducer = (accumulator, currentValue) => {
   return accumulator + currentValue
 }
 
-console.log([1, 2, 3].mReduce(reducer, 10))
+
+console.log([1, 2, 3].myReducer(reducer, 0))
